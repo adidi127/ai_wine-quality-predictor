@@ -81,7 +81,7 @@ if MODULES_AVAILABLE:
                             st.session_state.models_loaded = True
                             
                             st.success("✅ Models trained and saved!")
-                            st.experimental_rerun()
+                            st.rerun()
                             
                         except Exception as e:
                             st.error(f"Training failed: {e}")
